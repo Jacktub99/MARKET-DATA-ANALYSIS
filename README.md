@@ -3,6 +3,39 @@ MarketData è un'applicazione web che punta alla libertà di leggere le asset ch
 
 ISTRUZIONI ALL'USO
 
+Prerequisites
+Make sure you have the following tools installed:
+
+Python (3.x)
+Node.js (and npm)
+Django
+Django REST Framework
+React
+Tailwind CSS
+
+Django Backend Setup
+Create a Virtual Environment: Navigate to the backend directory and create a virtual environment.
+
+cd backend
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+Install Python Dependencies: Install required packages from requirements.txt.
+
+pip install -r requirements.txt
+Apply Migrations: Navigate to the backend Django application and set up the database with initial migrations.
+
+cd backend
+python manage.py migrate
+Create Superuser (Optional): Create a superuser account to access Django's admin panel if needed.
+
+python manage.py createsuperuser
+Run the Django Server: Start the development server.
+
+python manage.py runserver
+
+4. Access the Application
+Django backend will be available at http://localhost:8000.
+
 Quando il sito viene caricato, ci troveremo davanti alla pagina HOME, nella quale potremmo scegliere come muoverci all'interno del sito.
 
 1) REGISTRAZIONE UTENTE, prima di tutto è consigliabile completare la registrazione attraverso la pagina apposita, per godere di un'esperienza migliore. Registrarsi infatti farà si che l'utente possa salvare i propri asset preferiti nella sezione "Preferiti",
